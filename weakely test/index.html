@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Products List -->
+    <div class="products">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="casual.jpg" alt="Casual Shirt" class="product-img"></td>
+            <td>Casual Shirt</td>
+            <td>250</td>
+            <td>
+              <button class="btn" onclick="updateQuantity(this, -1)">-</button>
+              <span class="quantity">1</span>
+              <button class="btn" onclick="updateQuantity(this, 1)">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="formal.jpg" alt="Formal Shirt" class="product-img"></td>
+            <td>Formal Shirt</td>
+            <td>500</td>
+            <td>
+              <button class="btn" onclick="updateQuantity(this, -1)">-</button>
+              <span class="quantity">1</span>
+              <button class="btn" onclick="updateQuantity(this, 1)">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="denim.jpg" alt="Denim Shirt" class="product-img"></td>
+            <td>Denim Shirt</td>
+            <td>750</td>
+            <td>
+              <button class="btn" onclick="updateQuantity(this, -1)">-</button>
+              <span class="quantity">1</span>
+              <button class="btn" onclick="updateQuantity(this, 1)">+</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart">
+      <h2>Cart</h2>
+      <div id="cart-items">
+        <p id="cart-status">Cart is Empty</p>
+      </div>
+      <div class="total">
+        <p>Total Amount: <span id="total-amount">Rs. 0</span></p>
+      </div>
+      <button id="checkout-btn">Proceed to Buy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
