@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1f26;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    color: #f5f6fa;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px #000;
+}
+
+form {
+    background-color: #333647;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input, select, button {
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+input, select {
+    color: #333;
+    background-color: #f5f6fa;
+    width: 140px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.container {
+    width: 80%;
+    max-height: 430px;
+    border: none;
+    padding: 30px 20px;
+    margin-top: 40px;
+    display: none;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #333647;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2f3a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #f5f6fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card div {
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+}
+
+.card .actions {
+    display: flex;
+    gap: 10px;
+}
+
+button.action-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.action-btn:hover {
+    background-color: #c0392b;
+}
+
+button.increment, button.decrement {
+    background-color: #3498db;
+}
+
+button.increment:hover, button.decrement:hover {
+    background-color: #2980b9;
+}
+
+::placeholder {
+    color: #888;
+}
